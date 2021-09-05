@@ -28,7 +28,6 @@ public class Users {
 	private Long id;
 	
 	@NotNull
-	@Pattern(regexp="^[a-zA-Z]{30}")
 	private String username;
 	
 	@NotNull

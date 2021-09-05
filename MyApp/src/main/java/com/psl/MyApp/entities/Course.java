@@ -12,14 +12,12 @@ public class Course {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private String courseId;
+	private int courseId;
 	
 	@NotNull
-	@Pattern(regexp="^[a-zA-Z]{30}")
 	private String courseName;
 	
 	@NotNull
-	@Pattern(regexp="^[0-9]{10}")
 	private int coursePrice;
 	
 
@@ -32,18 +30,18 @@ public class Course {
 	
 	}
 
-	public Course(String courseId, String courseName, int coursePrice) {
+	public Course(int courseId, String courseName, int coursePrice) {
 		
 		this.courseId = courseId;
 		this.courseName = courseName;
 		this.coursePrice = coursePrice;
 	}
 
-	public String getCourseId() {
+	public int getCourseId() {
 		return courseId;
 	}
 
-	public void setCourseId(String courseId) {
+	public void setCourseId(int courseId) {
 		this.courseId = courseId;
 	}
 

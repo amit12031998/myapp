@@ -16,7 +16,7 @@ public class Student {
 	private int id;
 	
 	@NotNull
-	@Pattern(regexp="^[a-zA-Z]{30}")
+	@Pattern(regexp="^[a-zA-Z]*")
 	private String name;
 	
 	@NotNull
